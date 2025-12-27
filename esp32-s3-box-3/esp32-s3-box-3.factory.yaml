@@ -19,10 +19,6 @@ ota:
   - platform: http_request
     id: ota_http_request
 
-# Здесь указываем platformio_options
-platformio_options:
-  default_src_url_timeout: 60  # секунды
-
 update:
   - platform: http_request
     id: update_http_request

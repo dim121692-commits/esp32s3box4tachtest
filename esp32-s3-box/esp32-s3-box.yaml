@@ -1,7 +1,5 @@
----
 substitutions:
-  name: esp32-s3-box
-  friendly_name: ESP32 S3 Box
+  
   loading_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/loading_320_240.png
   idle_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/idle_320_240.png
   listening_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/listening_320_240.png
@@ -36,8 +34,8 @@ substitutions:
   font_family: Figtree
 
 esphome:
-  name: ${name}
-  friendly_name: ${friendly_name}
+  name: esp32s3boxtouch4
+  friendly_name: ESP32 S3 Box
   min_version: 2025.5.0
   name_add_mac_suffix: true
   on_boot:
@@ -86,6 +84,7 @@ wifi:
     - script.execute: draw_display
   on_disconnect:
     - script.execute: draw_display
+
 
 captive_portal:
 

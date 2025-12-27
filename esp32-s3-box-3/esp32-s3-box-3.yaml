@@ -52,6 +52,12 @@ esphome:
             - lambda: id(init_in_progress) = false;
             - script.execute: draw_display
 
+
+# Здесь указываем platformio_options
+platformio_options:
+  default_src_url_timeout: 60  # секунды
+
+
 esp32:
   board: esp32s3box
   flash_size: 16MB

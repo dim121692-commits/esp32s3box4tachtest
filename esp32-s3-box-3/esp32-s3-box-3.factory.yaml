@@ -23,7 +23,7 @@ update:
   - platform: http_request
     id: update_http_request
     name: Firmware
-    source: https://firmware.esphome.io/wake-word-voice-assistant/esp32-s3-box-3/manifest.json
+    source: "https://github.com/dim121692-commits/esp32s3box4tachtest/raw/main/firmware/manifest.json"
 
 http_request:
 
